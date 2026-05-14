@@ -1,0 +1,6 @@
+/* kora-autogen: from tailwind.config in HTML — Play CDN parity for CLI build */
+@theme {
+  --color-accent: #FFFFFF;
+  --color-primary: #E6528F;
+  --color-secondary: #000000;
+}
