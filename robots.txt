@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://kora-5ee206ae-b424-48b2-9f4c-b5fcd27f319d.pages.dev/sitemap.xml
+Disallow: /
