@@ -66,7 +66,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </style>
 <link href="assets/styles.css" rel="stylesheet"/>
-<meta content="noindex, nofollow" name="robots"/></head>
+<meta content="noindex, nofollow" name="robots"/><!-- Hero image preload -->
+<link as="image" href="https://images.squarespace-cdn.com/content/v1/575b42a1e321409976a481c0/2b7a4bc2-d2fb-40bb-bcd0-f9e3972a8d91/DSC06775.jpeg" rel="preload"/>
+</head>
 <body class="bg-secondary text-accent">
 <!-- Header -->
 <header class="bg-secondary/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="header">
@@ -108,9 +110,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section class="relative h-screen min-h-[600px] flex items-center justify-center text-center">
 <div class="absolute inset-0 bg-black/60 z-10"></div>
 <!-- KORA_HERO_MEDIA_START -->
-<video aria-hidden="true" autoplay="" class="absolute inset-0 w-full h-full object-cover" loop="" muted="" playsinline="" preload="metadata">
-<source src="https://stream.mux.com/xUKw4IF6qvPSyfZmoPND4ck3nfHE00Kzf4U8NmtOJxNA/medium.mp4" type="video/mp4"/>
-</video>
+<div class="kora-hero-slideshow absolute inset-0 w-full h-full" data-kora-hero-slideshow="">
+<img alt="" class="kora-hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000" decoding="async" fetchpriority="high" loading="eager" src="https://images.squarespace-cdn.com/content/v1/575b42a1e321409976a481c0/2b7a4bc2-d2fb-40bb-bcd0-f9e3972a8d91/DSC06775.jpeg"/>
+<img alt="" class="kora-hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" decoding="async" loading="lazy" src="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1778580437_43d9bfa9_0.jpg"/>
+<img alt="" class="kora-hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" decoding="async" loading="lazy" src="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/edited_1776183605_591176d1_0.jpg"/>
+</div>
+<script>
+(function(){var r=document.currentScript&&document.currentScript.previousElementSibling;if(!r||!r.matches('[data-kora-hero-slideshow]'))return;var s=r.querySelectorAll('.kora-hero-slide');if(s.length<2)return;var i=0;setInterval(function(){s[i].classList.add('opacity-0');i=(i+1)%s.length;s[i].classList.remove('opacity-0');},5000);})();
+</script>
 <!-- KORA_HERO_MEDIA_END -->
 <div class="relative z-20 px-4">
 <h1 class="text-5xl md:text-7xl lg:text-8xl font-display uppercase tracking-wider text-accent">THE LOUNGE</h1>
@@ -1831,13 +1838,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         document.head.appendChild(style);
 
     </script>
-
 <script>
 window.KORA_WEBSITE_CONFIG = {
   apiBaseUrl: "http://localhost:8000",
   recaptchaSiteKey: "6LfRt44sAAAAACVTvFvGjoufmEcZqZk_pT4T_5Xd"
 };
 </script>
+
 <!-- KORA_TRACKING_EVENTS_START -->
 <script>
   window.dataLayer = window.dataLayer || [];
