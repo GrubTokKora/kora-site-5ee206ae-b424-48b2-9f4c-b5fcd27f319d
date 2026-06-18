@@ -6,11 +6,11 @@
 /* Theme migrated from former Play CDN tailwind.config (extend) */
 /* KORA_BRAND_THEME_START */
 @theme {
-  --color-primary: #ffffff;
-  --color-secondary: #9e459a;
-  --color-accent: #e95951;
+  --color-primary: #e6528f;
+  --color-secondary: #FFFFFF;
+  --color-accent: #000000;
   --font-heading: Oswald, serif;
-  --font-body: "Libre Baskerville", sans-serif;
+  --font-body: Inter, sans-serif;
 }
 /* KORA_BRAND_THEME_END */
 
@@ -20,5 +20,4 @@
   h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 }
 /* KORA_BRAND_BASE_END */
-
 
