@@ -64,6 +64,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         h1, h2, h3, .font-display {
             font-family: 'Oswald', sans-serif;
         }
+        .hero-slide {
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+        .hero-slide.active {
+            opacity: 1;
+        }
     </style>
 <link href="assets/styles.css" rel="stylesheet"/>
 <meta content="noindex, nofollow" name="robots"/><!-- Hero image preload -->
@@ -78,14 +85,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700&display=swap">
 <!-- KORA_GOOGLE_FONTS_END -->
 <!-- Hero image preload -->
-<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
-<!-- Hero image preload -->
-<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
-<!-- Hero image preload -->
-<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
-<!-- Hero image preload -->
-<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
-<!-- Hero image preload -->
 <link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
 <!-- Hero image preload -->
 <link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
@@ -96,11 +95,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Hero image preload -->
 <link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
 <!-- Hero image preload -->
+<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
+<!-- Hero image preload -->
 <link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
 <!-- Hero image preload -->
 <link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
 <!-- Hero image preload -->
 <link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
+<!-- Hero image preload -->
+<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload"/>
+<!-- Hero image preload -->
+<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
+<!-- Hero image preload -->
+<link as="image" href="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" rel="preload">
 </link></link></link></link></link></link></head>
 <body class="bg-secondary text-accent">
 <!-- Header -->
@@ -143,7 +150,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section class="relative h-screen min-h-[600px] flex items-center justify-center text-center">
 <div class="absolute inset-0 bg-black/60 z-10"></div>
 <!-- KORA_HERO_MEDIA_START -->
-<img alt="Hero" class="absolute inset-0 w-full h-full object-cover" decoding="async" fetchpriority="high" height="1080" loading="eager" src="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" width="1920"/>
+<div class="absolute inset-0 w-full h-full" id="hero-slideshow">
+<img alt="Hero" class="hero-slide absolute inset-0 w-full h-full object-cover" decoding="async" fetchpriority="high" height="1080" loading="eager" src="https://deveusblob.blob.core.windows.net/kora-business-images/generated/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/promotional_1777295884_99cba72f_0.jpg" width="1920"/>
+<img alt="Hero" class="hero-slide absolute inset-0 w-full h-full object-cover" decoding="async" fetchpriority="auto" height="1080" loading="lazy" src="https://deveusblob.blob.core.windows.net/kora-business-images/user-media/5ee206ae-b424-48b2-9f4c-b5fcd27f319d/7554ddb9-6882-4421-8f54-692dccdb1927/1774587676_gb97np.jpg" width="1920"/>
+</div>
 <!-- KORA_HERO_MEDIA_END -->
 <div class="relative z-20 px-4">
 <h1 class="text-5xl md:text-7xl lg:text-8xl font-display uppercase tracking-wider text-accent">THE LOUNGE</h1>
@@ -2030,6 +2040,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `;
         document.head.appendChild(style);
 
+        // Hero Slideshow
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+        if (slides.length > 1) {
+            slides[currentSlide].classList.add('active');
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 5000); // Change slide every 5 seconds
+        } else if (slides.length === 1) {
+            slides[0].classList.add('active');
+        }
     </script>
 <script>
 window.KORA_WEBSITE_CONFIG = {
